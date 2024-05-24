@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pesquisa{
+    position: relative;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    /* overflow: hidden; */
+}
+
+.pesquisa>input{
+    position: absolute;
+    left: 0;
+    border: none;
+    width: 80%;
+    font-size: 1em;
+    padding: 5px;
+    height: 100%;
+}
+
+.pesquisa>button{
+    border: none;
+    border-left:1px solid black ;
+    height: 100%;
+    padding: 2px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 50px;
+}
+
+.pesquisa>button:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+}
+
+#myMap{
+    width: 95vw;
+    height: 70vh;
+}
+
+#pushpinClick{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    font-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0.603);
+    text-align: center;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(2px);
+    height: 50vh;
+    border-radius: 20px;
+}
+
+#pushpinClick>span{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}

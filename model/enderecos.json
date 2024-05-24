@@ -1,0 +1,31 @@
+[
+    {
+        "endereco": "Posto1",
+        "location": { "latitude": -23.504872803268782, "longitude": -46.42112108832289 },
+        "title": "Posto de Gasolina",
+        "subTitle": "Ipiranga",
+        "text": "X",
+        "color": "green",
+        "icon":"img/posto.png",
+        "description":"Posto ipiranga "
+    },{
+        "endereco": "Posto2",
+        "location": { "latitude": -23.5039094148893, "longitude": -46.42160872136846 },
+        "title": "Posto de Gasolina",
+        "subTitle": "Petrobras",
+        "text": "X",
+        "color": "red",
+        "icon":"img/posto.png",
+        "description":"posto petrobras"
+    },{
+        "endereco": "Posto3",
+        "location": { "latitude": -23.501150474189107, "longitude": -46.42270395293134 },
+        "title": "Posto de Gasolina",
+        "subTitle": "Ipiranga",
+        "text": "X",
+        "color": "green",
+        "icon":"img/posto.png",
+        "description":"Posto ipiranga "
+    }
+    
+]

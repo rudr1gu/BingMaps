@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Bing Maps teste</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./views/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Reference to the Bing Maps SDK -->
+    <script type='text/javascript'
+            src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=chave' async defer>
+    </script>
+    
+    <script type="module" src="estilo.js"></script>
+</head>
+<body>
+    <div id='printoutPanel'></div>
+    <div id='searchBoxContainer'><input type= 'text' id= 'searchBox'/></div>
+
+    <section id="myMap"></section>
+    <div id="pushpinClick">
+        <span id="close">x</span>
+        <h1>Clicou!</h1>
+    </div>
+    <script type="text/javascript" src="./controller/main.js" async defer></script>
+</body>
+</html>
