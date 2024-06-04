@@ -10,6 +10,7 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/views/map.html');
 })
 
-app.listen(7200,()=>{
-    console.log("servidor rodando na porta 7200")
+const port = process.env.PORT || 7200;
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`);
 });
