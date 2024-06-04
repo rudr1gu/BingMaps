@@ -1,21 +1,50 @@
 {
-    "short_name": "Rudr1gu Maps",
-    "name": "Aplicativo de mapa",
-    "icons": [
+  "id": "/",
+  "scope": "/",
+  "name": "Rudr1gu Maps",
+  "display": "standalone",
+  "start_url": "/",
+  "short_name": "Rudr1gu Maps",
+  "theme_color": "#212529",
+  "description": "maps rudr1gu",
+  "orientation": "any",
+  "background_color": "#212529",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": ["window-controls-overlay"],
+  "launch_handler": {
+  "client_mode": "focus-existing"
+  },
+  "icons": [
       {
-        "src": "./icons/192x192.jpg",
-        "type": "image/jpg",
-        "sizes": "192x192"
+        "src": "/icons/rsmed.png",
+        "sizes": "512x512",
+        "type": "image/png"
       },
       {
-        "src": "./icons/512x512.jpg",
-        "type": "image/jpg",
-        "sizes": "512x512"
+        "src": "/icons/rsmed.png",
+        "sizes": "192x192",
+        "type": "image/png"
       }
-    ],
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
-  }
+    ]
+  ,
+  "categories": [
+    "maps"
+  ],
+  "shortcuts": [
+    {
+      "name": "Sobre",
+      "short_name": "Sobre",
+      "description": "Pagina Sobre",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "/icons/rsmed.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
   

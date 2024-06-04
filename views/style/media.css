@@ -1,0 +1,9 @@
+.navbar-brand>span{
+    color: var(--corWhite);
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+footer>p{
+    font-size: 5em;
+}
