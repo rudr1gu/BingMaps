@@ -27,6 +27,7 @@ p{
     margin-bottom: 0;
     padding: 0;
 }
+
 .navbar-brand>span{
     color: var(--corWhite);
     font-size: 2em;
@@ -62,7 +63,7 @@ main>.busca{
     border: none;
     border-radius: 20px;
     padding: 5px 10px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     cursor: pointer;
 }
 .btnPosi:hover{
@@ -72,7 +73,7 @@ main>.busca{
 
 .pesquisa>input{
     border: none;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 3px;
     border-radius: 20px;
     text-align: center;
@@ -122,7 +123,7 @@ span.linkedin, .git, .insta, .yt{
 div#result{
     position: absolute;
     bottom: 100px;
-    width: 400px;
+    width: 70vw;
     height: 40px;
     padding: 2px;
     z-index: 99;
@@ -137,7 +138,7 @@ div#result{
 
 div#result>p{
     color: var(--corWhite);
-    font-size: 1em;
+    font-size: 1.8em;
     text-align: center;
     text-justify: center;
     margin: 2px;
@@ -153,7 +154,7 @@ div#result>p{
     font-weight: bolder;
     background-color: var(--corWhite);
     color: var(--corBlack);
-    font-size: .7em;
+    font-size: .8em;
     border-radius: 50%;
     cursor: pointer;
 
