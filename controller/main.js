@@ -26,12 +26,14 @@ function GetMap(){
         }
     });
 
+    let iconPin = '../views/icons/pin.png';
+
     btnPosition.addEventListener('click', () => {
         navigator.geolocation.getCurrentPosition((position) => {
             console.log(position);
             map.setView({center: new Microsoft.Maps.Location(position.coords.latitude, position.coords.longitude), zoom: 20});
             
-            let pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), null);
+            let pushpin = new Microsoft.Maps.Pushpin(map.getCenter(),{icon: iconPin}, null);
             map.entities.push(pushpin, {visible: true, draggable: true, anchor: new Microsoft.Maps.Point(0, 0)});
             local.innerHTML = `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`; 
             result.style.display = 'flex';          
@@ -50,7 +52,7 @@ function GetMap(){
     function selectedSuggestion(suggestionResult) {
         map.entities.clear();
         map.setView({ bounds: suggestionResult.bestView });
-        var pushpin = new Microsoft.Maps.Pushpin(suggestionResult.location);
+        var pushpin = new Microsoft.Maps.Pushpin(suggestionResult.location,{icon: iconPin}, null);
         map.entities.push(pushpin);
     }
 };
